@@ -8,9 +8,13 @@ namespace Laba1
         static void Main(string[] args)
         {
             BankAccount bankAccount = new BankAccount();
-            bankAccount.Account = 1;
-            bankAccount.Balance = 0;
-            bankAccount.Type = AccountType.Debet;
+
+
+            Console.WriteLine(bankAccount.Account);
+            BankAccount bankAccount1 = new BankAccount();
+            Console.WriteLine(bankAccount1.Account);
+            BankAccount bankAccount2 = new BankAccount();
+            Console.WriteLine(bankAccount2.Account);
 
             Console.ReadKey();
 
