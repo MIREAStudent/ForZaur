@@ -16,6 +16,17 @@ namespace Laba1
             BankAccount bankAccount2 = new BankAccount();
             Console.WriteLine(bankAccount2.Account);
 
+
+            bankAccount.Balance = 1000;
+            bankAccount.pullAccount(2000);
+            bankAccount.pullAccount(500);
+
+            Console.WriteLine(bankAccount.Balance);
+
+            bankAccount.pushAccount(2000);
+
+            Console.WriteLine(bankAccount.Balance);
+
             Console.ReadKey();
 
 

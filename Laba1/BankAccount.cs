@@ -26,6 +26,19 @@ namespace Laba1
             globalAccount += 10;
         }
 
+        public void pullAccount(int sum)
+        {
+            if (this.balance > sum)
+                this.balance -= sum;
+            else
+                Console.WriteLine("Недостаточно средств");
+        }
+
+        public void pushAccount(int sum)
+        {
+            this.balance += sum;
+        }
+
     }
 
 
