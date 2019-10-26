@@ -8,12 +8,12 @@ namespace Laba1
         static void Main(string[] args)
         {
 
-            ChekSystemIFormattable chekSystemIFormattable = new ChekSystemIFormattable();
 
-            
 
-            Console.WriteLine(Instanceof.Instance(chekSystemIFormattable)); 
-            Console.WriteLine(Instanceof.Instance(new Object())); 
+            MailFile mailFile = new MailFile();
+
+            mailFile.MailSet("C:\\Лабы CSharp\\Laba1\\users.txt"); 
+
 
 
             Console.ReadKey();

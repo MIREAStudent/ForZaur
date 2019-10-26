@@ -49,6 +49,7 @@
     <Compile Include="ChekSystemIFormattable.cs" />
     <Compile Include="FileUppercase.cs" />
     <Compile Include="Instanceof.cs" />
+    <Compile Include="MailFile.cs" />
     <Compile Include="Reverse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
