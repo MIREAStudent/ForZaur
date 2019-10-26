@@ -8,10 +8,12 @@ namespace Laba1
         static void Main(string[] args)
         {
 
+            ChekSystemIFormattable chekSystemIFormattable = new ChekSystemIFormattable();
 
-            FileUppercase.UpperTextInFile("C:\\Лабы CSharp\\Laba1\\FileForStreamTest.txt"); 
-            FileUppercase.UpperTextInFile("1"); 
+            
 
+            Console.WriteLine(Instanceof.Instance(chekSystemIFormattable)); 
+            Console.WriteLine(Instanceof.Instance(new Object())); 
 
 
             Console.ReadKey();
