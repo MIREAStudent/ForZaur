@@ -9,7 +9,8 @@ namespace Laba1
         {
 
 
-            Console.WriteLine(Reverse.reverse("abcdef")); 
+            FileUppercase.UpperTextInFile("C:\\Лабы CSharp\\Laba1\\FileForStreamTest.txt"); 
+            FileUppercase.UpperTextInFile("1"); 
 
 
 
