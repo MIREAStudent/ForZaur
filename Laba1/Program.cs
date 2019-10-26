@@ -7,20 +7,20 @@ namespace Laba1
     {
         static void Main(string[] args)
         {
-         
-
-            Building building = new Building();
-
-            building.Appartment = 1000;
-            building.Floor = 10;
-            building.Porch = 5;
-            building.Height = 30;
-
-            Console.WriteLine(building.appartmentInPorch());
-            Console.WriteLine(building.heightFloor());
-            Console.WriteLine(building.appartmentInFloor());
 
 
+            BankAccount account1 = new BankAccount(); 
+            BankAccount account2 = new BankAccount();
+
+            account1.Balance = 1000;
+            account2.Balance = 500;
+
+            account1.getMoney(account2, 500);
+            Console.WriteLine(account1.Balance);
+            account1.getMoney(account2, 500);
+            account1.getMoney(account1, 8000);
+
+            Console.WriteLine(account1.Balance);
             Console.ReadKey();
 
 

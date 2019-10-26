@@ -39,6 +39,29 @@ namespace Laba1
             this.balance += sum;
         }
 
+        public void getMoney(BankAccount account, int money)
+        {
+            if (account != this)
+            {
+                if (account.Balance >= money)
+                {
+                    account.Balance -= money;
+                    this.Balance += money;
+
+                }
+                else
+                {
+                    Console.WriteLine("Недостаточно средств для перевода");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Попытка перевести средтсва самому себе");
+            }
+
+        }
+
+
     }
 
 
