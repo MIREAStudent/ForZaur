@@ -10,19 +10,38 @@ namespace Laba1
         private int balance;
         private AccountType type;
 
-        
-        public int Account { get => account; }
-        public int Balance { get => balance; set => balance = value; }
-        public AccountType Type { get => type; set => type = value; }
+        public int Account { get => account;  }
+        public static int GlobalAccount { get => globalAccount;  }
+        public int Balance { get => balance; }
+        internal AccountType Type { get => type; }
 
         public BankAccount()
         {
-            account = globalAccount;
+            incGlobalAccount();
+        }
+
+        public BankAccount(AccountType type)
+        {
+            this.type = type; 
+            incGlobalAccount();
+        }
+
+        public BankAccount(int balance)
+        {
+            this.balance = balance;
+            incGlobalAccount();
+        }
+
+        public BankAccount(AccountType type, int balance)
+        {
+            this.type = type;
+            this.balance = balance;
             incGlobalAccount();
         }
 
         private void incGlobalAccount()
         {
+            this.account = globalAccount; 
             globalAccount += 10;
         }
 
@@ -43,10 +62,10 @@ namespace Laba1
         {
             if (account != this)
             {
-                if (account.Balance >= money)
+                if (account.balance >= money)
                 {
-                    account.Balance -= money;
-                    this.Balance += money;
+                    account.balance -= money;
+                    this.balance += money;
 
                 }
                 else
