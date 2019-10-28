@@ -16,7 +16,7 @@ namespace Laba1
 
         }
 
-       public static String GetTextFile(String path)
+        static String GetTextFile(String path)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace Laba1
                 return String.Empty; 
             }
         }
-        public static void SendText(String path, String text)
+         static void SendText(String path, String text)
         {
             try
             {
