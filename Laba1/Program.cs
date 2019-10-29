@@ -9,7 +9,11 @@ namespace Laba1
         static void Main(string[] args)
         {
 
-            Song song = new Song();
+            ACipher elem = new ACipher();
+
+
+            Console.WriteLine(elem.Enecode("абв?гд !"));
+            Console.WriteLine(elem.Decode("ааа яяя ббб ввв ! ?"));
             
 
             Console.ReadKey(); 
