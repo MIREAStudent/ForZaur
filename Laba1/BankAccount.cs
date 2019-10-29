@@ -54,8 +54,10 @@ namespace Laba1
             if (this.balance > sum)
             {
                 this.balance -= sum;
-                transactions.Enqueue(new BankTransaction(sum));
-
+                BankTransaction transaction = new BankTransaction(sum);
+                transaction.Dispose();
+                transactions.Enqueue(transaction);
+                
             }
             else
             {
@@ -66,7 +68,10 @@ namespace Laba1
         public void PushAccount(int sum)
         {
             this.balance += sum;
-            transactions.Enqueue(new BankTransaction(sum)); 
+            BankTransaction transaction = new BankTransaction(sum);
+            transaction.Dispose();
+            transactions.Enqueue(transaction);
+            
         }
 
         public void GetMoney(BankAccount account, int money)
@@ -77,6 +82,10 @@ namespace Laba1
                 {
                     account.balance -= money;
                     this.balance += money;
+                    BankTransaction transaction = new BankTransaction(money);
+                    transaction.Dispose();
+                    transactions.Enqueue(transaction);
+                   
 
                 }
                 else
