@@ -15,7 +15,24 @@ namespace Laba1
         public string Name { get => name; set => name = value; }
         public string Author { get => author; set => author = value; }
         internal Song Prev { get => prev; set => prev = value; }
+        public Song(String author, String name)
+        {
+            this.author = author;
+            this.name = name;
+            this.prev = null; 
+        }
 
+        public Song(String author, String name, Song prev)
+        {
+            this.author = author;
+            this.name = name;
+            this.prev = prev;
+        }
+
+        public Song()
+        {
+
+        }
         public void Print()
         {
             Console.WriteLine(this.Title() + " "); 
