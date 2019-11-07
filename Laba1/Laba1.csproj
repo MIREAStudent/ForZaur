@@ -49,6 +49,7 @@
     <Compile Include="Building.cs" />
     <Compile Include="ChekSystemIFormattable.cs" />
     <Compile Include="BankTransaction.cs" />
+    <Compile Include="Figure.cs" />
     <Compile Include="FileUppercase.cs" />
     <Compile Include="Instanceof.cs" />
     <Compile Include="ICipher.cs" />
